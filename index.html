@@ -243,7 +243,8 @@
     <!-- ============ NAV ============ -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#hero" class="text-2xl font-bold tracking-wide text-white drop-shadow-lg">
+            <a href="#hero" class="flex items-center gap-3 text-2xl font-bold tracking-wide text-white drop-shadow-lg">
+                <img src="leap-logo.png" alt="LEAP" class="w-9 h-9 rounded-md">
                 Kayla's Kitchen
             </a>
             <!-- Desktop links -->
@@ -310,7 +311,7 @@
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-4xl md:text-5xl text-center mb-4 text-navy reveal">Drinks Menu</h2>
             <p class="text-center text-grey mb-16 max-w-xl mx-auto reveal">
-                Freshly brewed with care — your choice of milk and flavour.
+                Freshly brewed with care by the one and only Kayla — your choice of milk and flavour.
             </p>
 
             <!-- Coffee -->
@@ -413,32 +414,38 @@
     <!-- ============ ABOUT ============ -->
     <section id="about" class="py-20 md:py-28" style="background-color: #EEF4FA;">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl text-center mb-12 text-navy reveal">Our Story</h2>
+            <h2 class="text-4xl md:text-5xl text-center mb-12 text-navy reveal">Meet Kayla</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <!-- Kayla's photo -->
                 <div class="reveal-left">
                     <div class="tilted-frame rounded-2xl overflow-hidden shadow-lg">
                         <img src="kayla.png"
-                             alt="Kayla — owner of Kayla's Kitchen"
+                             alt="Kayla — the legendary barista at LEAP"
                              class="w-full h-auto object-cover aspect-[3/4]">
                     </div>
                 </div>
                 <!-- Story text -->
                 <div class="reveal-right">
                     <p class="text-base leading-relaxed mb-6 text-grey">
-                        Kayla's Kitchen started with a simple idea: great coffee and honest food in a place
-                        that feels like home. What began as weekend pop-ups at the local market quickly
-                        grew into a neighbourhood favourite.
+                        Kayla's Kitchen is the heart and soul of the LEAP office. Tucked away on Level 11,
+                        it's the place everyone gravitates to — and it's all because of one person: <strong class="text-navy">Kayla</strong>.
                     </p>
                     <p class="text-base leading-relaxed mb-6 text-grey">
-                        Every cup is brewed with care, every dish is made from scratch, and every guest
-                        is treated like family. We source our beans from small-batch roasters and our
-                        produce from local farms whenever we can.
+                        Kayla isn't just a barista — she's an absolute legend. She remembers every single
+                        person's order, nails the perfect milk texture every time, and somehow makes even
+                        the most hectic Monday morning feel brighter with her infectious smile and
+                        warm energy. Her latte art? Genuinely café-quality. Her vibes? Unmatched.
+                    </p>
+                    <p class="text-base leading-relaxed mb-6 text-grey">
+                        Whether you need a silky flat white to power through a deadline or a perfectly
+                        spiced chai to wind down the afternoon, Kayla has you covered. She brings the
+                        kind of care and passion to every cup that most cafés only dream of — and she
+                        does it all with a smile that lights up the whole floor.
                     </p>
                     <p class="text-base leading-relaxed text-grey">
-                        Whether you're grabbing a quick flat white on your way to work or settling in
-                        for a lazy brunch, Kayla's Kitchen is your spot. Pull up a chair — we saved
-                        you a seat. 💛
+                        Honestly, she's the best part of working at LEAP. We don't deserve her, but
+                        we're incredibly lucky to have her. Come grab a coffee — you'll see what
+                        we mean. 💛
                     </p>
                 </div>
             </div>
@@ -456,8 +463,9 @@
                     <div class="reveal">
                         <h3 class="text-xl text-orange mb-2">📍 Address</h3>
                         <p class="text-grey leading-relaxed">
-                            123 High Street<br>
-                            Your Town, ST 12345
+                            LEAP Legal Software<br>
+                            Level 11, 207 Kent Street<br>
+                            Sydney NSW 2000
                         </p>
                     </div>
                     <!-- Hours -->
@@ -572,7 +580,7 @@
 
         // ===== TYPEWRITER EFFECT =====
         const typewriterEl = document.getElementById('typewriter');
-        const typewriterText = 'Handcrafted coffee, made with love';
+        const typewriterText = 'The best barista on Level 11 (and honestly, all of Sydney)';
         let charIndex = 0;
         function typeNextChar() {
             if (charIndex < typewriterText.length) {
